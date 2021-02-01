@@ -1,0 +1,38 @@
+html {
+	font-family: Century Gothic;
+	color: #222;
+}
+
+body {
+	background: #FF8E00;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+#currency {
+	border: none;
+	padding: 5px;
+	margin: 10px;
+}
+
+input {
+	border: none;
+    height: 35px;
+    width: 286px;
+    margin: 10px;
+}
+
+button {
+	display: block;
+    margin: 25px auto;
+    width: 200px;
+    height: 35px;
+    border: none;
+}
+
+#value {
+	font-size: 2em;
+}
