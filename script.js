@@ -19,12 +19,13 @@ calculate.addEventListener("click",function(){
   if(displayValue.innerHTML !== ""){
   	reset();
   }	
-  numValue = parseFloat(curr.value);	
-  myAmount = parseFloat(myAmount.value);
+  numValue = parseFloat(curr.value.replace(/,/g, '')).toFixed(2);	
+  myAmount = parseFloat(myAmount.value.replace(/,/g, ''));
   percent = (myAmount/1) * 100;
   value = (percent/100) * numValue / 100;
-  finalValue = Math.round(value * 100) / 100;
+  finalValue = (value * 100).toFixed(2);
   displayValue.innerHTML = `value: ${finalValue }`; 
+  
  });
 
 
